@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      position: relative;
+      background-color: aqua;
+      width: 100%;
+      height: 100vh;
+    }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+    }
+    .menu {
+      position: absolute;
+      width: 100%;
+      height: 80px;
+      top: 0;
+      color: #000;
+      z-index: 100;
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none;
+      padding: 0 5rem;
+      border-bottom: 1px solid #000;
+    }
+    li {
+      font-size: 2rem;
+      color: #000;
+      cursor: pointer;
+      font-weight: 800;
+    }
+  </style>
+  <body>
+    <ul class="menu">
+      <li class="men_item">Home</li>
+      <li class="men_item">Services</li>
+      <li class="men_item">About</li>
+      <li class="men_item">Contact</li>
+    </ul>
+    <img src="{% static 'images/pic.png' %}" />
+  </body>
+</html>
